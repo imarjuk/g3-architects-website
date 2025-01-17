@@ -36,7 +36,22 @@
     font-size: 1.25rem;
     border-radius: 8px;
 }
+main{
+    max-width: 1220ox;
+    margin: 0 auto;
+}
 
+main > section{
+    margin-top: 130px;
+}
+.text-primary{
+    color: #FF900E;
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
 /* header styles */
 
 
@@ -87,4 +102,61 @@ img {
 
 .banner-img{
     max-width: 100%;
+    margin-bottom: 30px;
+}
+
+/* team and feature related styles */
+main{
+    max-width: 1220px;
+}
+.teams{
+    align-items: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 100px;
+    max-width: 520px;
+}
+
+
+
+.future-des{
+    text-align: justify;
+}
+#Quick-lis{
+    font-weight: 400;
+}
+
+
+
+/* responsive media query   */
+@media screen and (max-width: 576px ){
+    .navbar, 
+    .nav-link, 
+    .teams {
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 20px;
+    }
+}
+
+/* medium size device */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+        margin-left: 30px;
+    }
 }
